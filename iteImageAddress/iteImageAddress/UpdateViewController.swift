@@ -23,6 +23,7 @@ class UpdateViewController: UIViewController {
     var receiveRelation = ""
     var receiveImage: UIImage?
     
+    // shared: 앱 전체에서 하나의 데이터베이스 인스턴스만 유지(여러 번 생성 방지)
     let dbManager = DatabaseManager.shared
     
     override func viewDidLoad() {
@@ -31,6 +32,7 @@ class UpdateViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    // 내부에서만 사용
     private func setupUI(){
         // 받아온 데이터로 UI 초기화
         tfName.text = receiveName
