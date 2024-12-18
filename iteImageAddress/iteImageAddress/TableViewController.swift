@@ -101,6 +101,7 @@ class TableViewController: UITableViewController {
                 detailView.receiveId = addressList[indexPath.row].id
                 detailView.receivePhone = addressList[indexPath.row].phoneNumber
                 detailView.receiveRelation = addressList[indexPath.row].relationship
+                detailView.receiveAddress = addressList[indexPath.row].address
             }
         }
     }
