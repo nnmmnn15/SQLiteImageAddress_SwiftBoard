@@ -6,12 +6,7 @@
 	objectVersion = 77;
 	objects = {
 
-/* Begin PBXBuildFile section */
-		5EAD25702D126DCD0082CEAC /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EAD256F2D126DCD0082CEAC /* libsqlite3.tbd */; };
-/* End PBXBuildFile section */
-
 /* Begin PBXFileReference section */
-		5EAD256F2D126DCD0082CEAC /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		68E759812D125E0B00A1C835 /* iteImageAddress.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iteImageAddress.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -41,26 +36,16 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5EAD25702D126DCD0082CEAC /* libsqlite3.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		5EAD256E2D126DCD0082CEAC /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				5EAD256F2D126DCD0082CEAC /* libsqlite3.tbd */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		68E759782D125E0B00A1C835 = {
 			isa = PBXGroup;
 			children = (
 				68E759832D125E0B00A1C835 /* iteImageAddress */,
-				5EAD256E2D126DCD0082CEAC /* Frameworks */,
 				68E759822D125E0B00A1C835 /* Products */,
 			);
 			sourceTree = "<group>";
