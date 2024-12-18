@@ -151,6 +151,9 @@
                                 <rect key="frame" x="130" y="400" width="142" height="35"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Photo 불러오기"/>
+                                <connections>
+                                    <action selector="btnGetImage:" destination="bIH-VL-5aD" eventType="touchUpInside" id="gro-Sq-O9Q"/>
+                                </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="29x-sb-80X">
                                 <rect key="frame" x="105" y="464" width="192" height="182"/>
@@ -163,6 +166,9 @@
                                 <color key="tintColor" systemColor="systemYellowColor"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="등록"/>
+                                <connections>
+                                    <action selector="btnInsert:" destination="bIH-VL-5aD" eventType="touchUpInside" id="6d0-Zt-NRi"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="4Mt-qH-8XS"/>
@@ -203,6 +209,14 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="주소록 입력" id="2iS-hS-XLi"/>
+                    <connections>
+                        <outlet property="btnPhotoState" destination="7hh-Xo-Okg" id="Zhd-Z5-YNm"/>
+                        <outlet property="imgProfile" destination="29x-sb-80X" id="14L-B7-1e1"/>
+                        <outlet property="lblAddress" destination="NI3-IU-mm3" id="r0Z-X0-tOG"/>
+                        <outlet property="lblName" destination="fai-h8-5KD" id="Xig-I1-SVp"/>
+                        <outlet property="lblPhone" destination="4sI-hJ-xyZ" id="W10-Hf-nXq"/>
+                        <outlet property="lblRelation" destination="ERP-K6-gjI" id="e4p-Wl-PnV"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lac-yU-U5y" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
