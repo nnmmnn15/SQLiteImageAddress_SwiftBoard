@@ -8,6 +8,9 @@
 import UIKit
 
 class TableViewController: UITableViewController {
+    
+    @IBOutlet var tvListView: UITableView!
+    
     var addressList: [AddressBook] = [] // 데이터를 저장할 배열
 
     override func viewDidLoad() {
@@ -84,13 +87,21 @@ class TableViewController: UITableViewController {
      }
      */
 
-    /*
+
      // MARK: - Navigation
 
      // In a storyboard-based application, you will often want to do a little preparation before navigation
-     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-         // Get the new view controller using segue.destination.
-         // Pass the selected object to the new view controller.
-     }
-     */
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "sgDetail" {
+            if let cell = sender as? UITableViewCell,
+               let indexPath = tableView.indexPath(for: cell),  // tvListView 대신 tableView 사용
+               let detailView = segue.destination as? UpdateViewController {
+                detailView.receiveName = addressList[indexPath.row].name
+                detailView.receiveImage = addressList[indexPath.row].image
+                detailView.receiveId = addressList[indexPath.row].id
+                detailView.receivePhone = addressList[indexPath.row].phoneNumber
+                detailView.receiveRelation = addressList[indexPath.row].relationship
+            }
+        }
+    }
 }
