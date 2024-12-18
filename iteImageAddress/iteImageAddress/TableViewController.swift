@@ -104,4 +104,9 @@ class TableViewController: UITableViewController {
             }
         }
     }
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        // 데이터 로드
+        fetchData()
+    }
 }
